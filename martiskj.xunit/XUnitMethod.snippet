@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>XUnit Test Method</Title>
+      <Shortcut>xum</Shortcut>
+      <Author>Martin Skjønhaug</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+          <Literal>
+              <ID>name</ID>
+              <Default>Name</Default>
+          </Literal>
+      </Declarations>
+
+      <Code Language="CSharp">
+        <![CDATA[[Fact]
+        public void $name$()
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>XUnit Async Test Method</Title>
+      <Shortcut>xuma</Shortcut>
+      <Author>Martin Skjønhaug</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+          <Literal>
+              <ID>name</ID>
+              <Default>Name</Default>
+          </Literal>
+      </Declarations>
+
+      <Code Language="CSharp">
+        <![CDATA[[Fact]
+        public async Task $name$()
+        {
+            $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+
+</CodeSnippets>
